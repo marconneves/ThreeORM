@@ -2,9 +2,54 @@
   "name": "threeorm",
   "version": "0.0.1",
   "description": "A ORM with three levels, cache on memory, after on redis and last on db persistente (mysql, postgress)",
-  "main": "index.js",
-  "repository": "git@github.com:marconneves/ThreeORM.git",
+  "tags": [
+    "orm",
+    "cache",
+    "redis",
+    "mysql",
+    "postgress",
+    "query builder"
+  ],
+  "main": "dist/ThreeORM.js",
+  "typings": "dist/ThreeORM.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marconneves/ThreeORM"
+  },
   "author": "Marcon Neves <me@themark.dev>",
   "license": "MIT",
-  "private": false
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint --ext .ts ./"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "debug": "^4.3.4"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/jsonfile": "^6.0.1",
+    "@types/merge-descriptors": "^1.0.1",
+    "@types/node": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
+  }
 }
