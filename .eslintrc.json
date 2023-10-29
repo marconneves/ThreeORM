@@ -36,7 +36,10 @@
         "no-console": "off",
         "no-plusplus": "off",
         "no-continue": "off",
-        "prefer-rest-params": "off"
+        "prefer-rest-params": "off",
+        "func-names": "off",
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/no-explicit-any": "off"
     },
     "settings": {
       "import/resolver": {

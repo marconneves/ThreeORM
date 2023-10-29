@@ -1,6 +1,6 @@
 {
   "name": "threeorm",
-  "version": "0.0.1",
+  "version": "0.0.1-beta.0",
   "description": "A ORM with three levels, cache on memory, after on redis and last on db persistente (mysql, postgress)",
   "tags": [
     "orm",
@@ -32,7 +32,8 @@
     "node": ">=10"
   },
   "dependencies": {
-    "debug": "^4.3.4"
+    "debug": "^4.3.4",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@types/debug": "^4.1.7",
