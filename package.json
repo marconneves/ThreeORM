@@ -1,0 +1,10 @@
+{
+  "name": "threeorm",
+  "version": "0.0.1",
+  "description": "A ORM with three levels, cache on memory, after on redis and last on db persistente (mysql, postgress)",
+  "main": "index.js",
+  "repository": "git@github.com:marconneves/ThreeORM.git",
+  "author": "Marcon Neves <me@themark.dev>",
+  "license": "MIT",
+  "private": false
+}
